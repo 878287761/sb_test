@@ -1,0 +1,93 @@
+/** reset **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, img{border:medium none;margin: 0;padding: 0;font-size: 100%;}
+body,button, input, select, textarea{font-size: 0.24rem;font-family:arial,'Microsoft Yahei';}
+h1, h2, h3, h4, h5, h6{font-weight: normal;}
+input,button,img{border: none;background: none;}
+input[type="text"],
+input[type="password"],button{outline: none;-webkit-appearance:none;}
+em,i{font-style:normal;}
+ul, ol{list-style: none;}
+a{text-decoration: none;
+	color:#333;
+}
+a,a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    text-decoration: none;
+}
+img{border:0px;  outline-width:0px;  vertical-align:top;}
+.clearfix { *zoom: 1; } 
+.clearfix:before, .clearfix:after {  display: table; line-height: 0; content: ""; } 
+.clearfix:after { clear: both; } 
+.fl { float:left;}
+.fr { float:right;}
+.hide { display:none !important;}
+.show {display: block !important;}
+
+.pulse{
+  animation:pulse 0.75s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(189,16,224, 0.8);
+    box-shadow: 0 0 0 0 rgba(189,16,224, 0.8);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 5px rgba(189,16,224, 0.3);
+      box-shadow: 0 0 0 5px rgba(189,16,224, 0.3);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 10px rgba(189,16,224, 0);
+      box-shadow: 0 0 0 10px rgba(189,16,224, 0);
+  }
+}
+
+@keyframes slowpulse1 {
+  0% {
+    filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(120,123,36, 0.4)) drop-shadow(0 0 5px rgba(245,251,68, 0.4));
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(120,123,36, 0.4)) drop-shadow(0 0 5px rgba(245,251,68, 0.4));
+  }
+  60% {
+    filter: drop-shadow(0 0 2px rgba(100,17,43, 1)) drop-shadow(0 0 10px rgba(120,123,36, 1)) drop-shadow(0 0 5px rgba(245,251,68, 1));
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,17,43, 1)) drop-shadow(0 0 10px rgba(120,123,36, 1)) drop-shadow(0 0 5px rgba(245,251,68, 1));
+  }
+  100% {
+    filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(120,123,36, 0.4)) drop-shadow(0 0 5px rgba(245,251,68, 0.4));
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(120,123,36, 0.4)) drop-shadow(0 0 5px rgba(245,251,68, 0.4));
+  }
+}
+
+@keyframes slowpulse2 {
+  0% {
+    filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(125,23,154, 0.4)) drop-shadow(0 0 5px rgba(200,35,247, 0.4));
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(125,23,154, 0.4)) drop-shadow(0 0 5px rgba(200,35,247, 0.4));
+  }
+  60% {
+    filter: drop-shadow(0 0 2px rgba(100,17,43, 1)) drop-shadow(0 0 10px rgba(125,23,154,36, 1)) drop-shadow(0 0 5px rgba(200,35,247, 1));
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,17,43, 1)) drop-shadow(0 0 10px rgba(125,23,154, 1)) drop-shadow(0 0 5px rgba(200,35,247, 1));
+  }
+  100% {
+    filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(125,23,154, 0.4)) drop-shadow(0 0 5px rgba(200,35,247, 0.4));
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(125,23,154, 0.4)) drop-shadow(0 0 5px rgba(200,35,247, 0.4));
+  }
+}
+
+@keyframes slowpulse3 {
+  0% {
+    filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(17,124,95, 0.4)) drop-shadow(0 0 5px rgba(45,254,197, 0.4));
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(17,124,95, 0.4)) drop-shadow(0 0 5px rgba(45,254,197, 0.4));
+  }
+  60% {
+    filter: drop-shadow(0 0 2px rgba(100,17,43, 1)) drop-shadow(0 0 10px rgba(17,124,95,36, 1)) drop-shadow(0 0 5px rgba(45,254,197, 1));
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,17,43, 1)) drop-shadow(0 0 10px rgba(17,124,95, 1)) drop-shadow(0 0 5px rgba(45,254,197, 1));
+  }
+  100% {
+    filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(17,124,95, 0.4)) drop-shadow(0 0 5px rgba(45,254,197, 0.4));
+    -webkit-filter: drop-shadow(0 0 2px rgba(100,17,43, 0.4)) drop-shadow(0 0 10px rgba(17,124,95, 0.4)) drop-shadow(0 0 5px rgba(45,254,197, 0.4));
+  }
+}
+
+
+

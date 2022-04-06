@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>首页</title>
+<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/css/swiper.css"/>
+<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+<script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/flexible.js}"></script>
+<script type="text/javascript" th:src="@{/js/swiper.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/downCount.js}"></script>
+<script type="text/javascript" th:src="@{/js/common.js}"></script>
+</head>
+<body>
+<div class="bg"></div>
+<div class="page">
+	<div id="hd">
+		<div class="wp clearfix">
+			<a href="index.html" class="hd-logo fl">
+				<img th:src="@{/images/logo.png}">
+			</a>
+			<a href="javascript:;" class="nav-btn"></a>
+			<div class="hd-nav fr">
+				<div class="nav-top clearfix">
+					<a href="index.html" class="nav-logo fl">
+						<img th:src="@{/images/logo.png}">
+					</a>
+					<a href="javascript:;" class="nav-close fr"></a>
+				</div>
+				<a href="notice.html" class="nav-item">公告</a>
+				<a href="rule.html" class="nav-item">规则说明</a>
+				<div class="nav-item user">
+					<span>账户</span>
+					<div class="dropdown">
+						<p>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</p>
+					</div>
+				</div>
+				<div class="nav-item balance">
+					<span>Been余额</span>
+					<div class="dropdown">
+						<p>240</p>
+					</div>
+				</div>
+				<a href="javascript:;" class="nav-item signout">退出</a>
+				<div class="hd-login clearfix">
+					<a href="login.html">登录</a>
+					<a th:href="@{register.html}">注册</a>
+				</div>
+				<div class="nav-item recommend">
+					<h4>推荐用户</h4>
+					<div class="dropdown">
+						<img th:src="@{/images/erweima.jpg}">
+						<!--<p>https://www.foomoo5d.com/index.php/Home/Login/main.html</p>-->
+						<a href="javascript:;" class="copy-btn">复制网址</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wp sendword">
+		<div class="text pulse">
+			<img src="images/bill.png">
+			<p>区块链公开可查询无法作弊难得发财机会</p>
+		</div>
+	</div>
+	<div class="index-page wp clearfix">
+		<div class="index-sec">
+			<div class="index-item1">
+				<div class="item-menu clearfix">
+					<a href="javascript:;" class="on">战队赛</a>
+					<a href="javascript:;">大奖池</a>
+					<a href="javascript:;">定时开奖</a>
+				</div>
+				<div id="mySwiper1" class="swiper-container">
+  					<div class="swiper-wrapper">
+					    <div class="swiper-slide">
+					    	<div class="battle item-box">
+					    		<div class="title">满100ETH立刻开奖</div>
+					    		<div class="amount">
+					    			<h1>99.000000</h1>
+					    			<h5>目前累集额（ETH）</h5>
+					    		</div>
+					    		<div class="my-team">我的战队：<span>神族</span></div>
+					    		<div class="race">
+					    			<h3>游戏进行中</h3>
+					    			<div class="race-wp">
+					    				<div class="race-item item-on">
+					    					<img class="img img1 shine" src="images/race1.png" alt="">
+					    					<h4>神族</h4>
+					    					<h5>Protoss</h5>
+					    					<p>站无不胜的王者</p>
+					    				</div>
+					    				<div class="race-item">
+					    					<img class="img img2 shine" src="images/race2.png" alt="">
+					    					<h4>天使</h4>
+					    					<h5>Angle</h5>
+					    					<p>永不熄灭的希望之光</p>
+					    				</div>
+					    				<div class="race-item">
+					    					<img class="img img3 shine" src="images/race3.png" alt="">
+					    					<h4>精灵</h4>
+					    					<h5>Spirit</h5>
+					    					<p>吸取天地之灵气</p>
+					    				</div>
+					    			</div>
+					    		</div>
+					    		<!-- <div class="race result">
+					    			<h3>本轮获胜战队</h3>
+					    			<div class="race-wp">
+					    				<div class="race-item">
+					    					<img class="img img1" src="images/race1.png" alt="">
+					    					<h4>神族</h4>
+					    					<h5>Protoss</h5>
+					    					<p>站无不胜的王者</p>
+					    				</div>
+					    				<div class="race-item winner">
+					    					<img class="img img2" src="images/race2.png" alt="">
+					    					<h4>天使</h4>
+					    					<h5>Angle</h5>
+					    					<p>永不熄灭的希望之光</p>
+					    					<img class="light" src="images/light.png">
+					    				</div>
+					    				<div class="race-item">
+					    					<img class="img img3" src="images/race3.png" alt="">
+					    					<h4>精灵</h4>
+					    					<h5>Spirit</h5>
+					    					<p>吸取天地之灵气</p>
+					    				</div>
+					    			</div>
+					    		</div> -->
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="prize item-box">
+					    		<div class="timeCount">
+					    			<h4>剩余时间</h4>
+									<ul class="countdown">
+								        <!-- <li><span class="days">00</span></li>
+								        <li class="seperator">:</li> -->
+								        <li> <span class="hours">00</span></li>
+								        <li class="seperator">:</li>
+								        <li> <span class="minutes">00</span></li>
+								        <li class="seperator">:</li>
+								        <li> <span class="seconds">00</span></li>
+								    </ul>
+					    		</div>
+					    		<h1>24557.0000</h1>
+					    		<p>目前累集额（ETH）</p><br><br>
+					    		<p>此轮奖池总额：<span>5666654</span></p>
+					    		<p>最高奖金：<span>40%</span><img class="icon popup-btn1" src="images/icon1.png"></p>
+					    		<div class="state">
+					    			<h4>游戏进行中，请敬候佳音</h4>
+									<!-- <table>
+										<thead>
+											<tr>
+												<td>
+													<h3>中奖名次</h3>
+													<h5>（共11次中奖）</h5>
+												</td>
+												<td>
+													<h3>瓜分奖金</h3>
+													<h5>（占奖池总额百分比）</h5>
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>12</td><td>15%</td>
+											</tr>
+											<tr>
+												<td>62</td><td>15%</td>
+											</tr>
+											<tr>
+												<td>50</td><td>15%</td>
+											</tr>
+											<tr>
+												<td>80</td><td>15%</td>
+											</tr>
+											<tr>
+												<td>125</td><td>15%</td>
+											</tr>
+											<tr>
+												<td>30</td><td>15%</td>
+											</tr>
+											<tr>
+												<td>500</td><td>15%</td>
+											</tr>
+											<tr>
+												<td>222</td><td>15%</td>
+											</tr>
+											<tr>
+												<td>423</td><td>15%</td>
+											</tr>
+										</tbody>
+									</table> -->
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="open-prize item-box">
+					    		<h4>开奖时间为每天下午6点</h4><br><br>
+					    		<h1>24557.0000</h1>
+					    		<p>奖池总额（ETH）</p><br><br><br>
+					    		<h4>随机20人，平分大奖</h4>
+					    		<!-- 未开奖 -->
+					    		<div class="namelist">
+					    			<h4>游戏进行中，请静候佳音</h4>
+					    			<ul class="limited">
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    			</ul>
+					    		</div>
+
+					    		<!-- 已开奖 -->
+					    		<!-- <div class="namelist">
+					    			<h4 class="color-violet">获奖名单</h4>
+					    			<ul>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li class="on">0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    				<li>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</li>
+					    			</ul>
+					    		</div> -->
+					    	</div>
+					    </div>
+				 	 </div>
+				</div>
+			</div>
+			<div class="index-item2 item-box">
+				<h3>购买KEY <img class=" popup-btn2" src="images/icon1.png"></h3>
+				<div class="key">
+					<div class="num">
+						<a href="javascript:;" class="reduce-btn"></a>
+						<input id="keyNum" type="text" value="1">
+						<span>key</span>
+						<a href="javascript:;" class="add-btn"></a>
+					</div>
+					<h5>@ <span class="quantity">0.04000000</span> ETH</h5>
+					<a href="javascript:;" class="pay-btn">用以太币购买</a>
+				</div>
+				<p class="tips">购买KEY的同时会扣除相应的ROFK（门票）</p>
+				<p>本次扣除：0.0001</p>
+				<p>账户余额：0<strong>（余额不足，请先充值）</strong></p>
+				<div class="rofk"><a href="javascript:;" class="rofk-btn">充值ROFK</a></div>
+			</div>
+		</div>
+		<div class="index-sec">
+			<div class="index-item3 item-box">
+				<div class="item-menu clearfix">
+					<a href="javascript:;" class="on">金库</a>
+					<a href="javascript:;">购买记录</a>
+					<a href="javascript:;">分红记录</a>
+				</div>
+				<div id="mySwiper2" class="swiper-container">
+  					<div class="swiper-wrapper">
+					    <div class="swiper-slide">
+					    	<div class="vault">
+					    		<div class="text-item clearfix">
+					    			<div class="name">总投资：</div>
+					    			<div class="value">
+					    				<p>10151000ETH</p>
+					    			</div>
+					    		</div>
+					    		<div class="text-item clearfix">
+					    			<div class="name">复投：</div>
+					    			<div class="value">
+					    				<p>15ETH</p>
+					    				<a href="#" class="item-btn">复投</a>
+					    			</div>
+					    		</div>
+					    		<div class="text-item clearfix">
+					    			<div class="name">可提现：</div>
+					    			<div class="value">
+					    				<p>15ETH</p>
+					    				<a href="#" class="item-btn">提现</a>
+					    			</div>
+					    		</div>
+					    		<div class="line"></div>
+					    		<div class="text-item clearfix">
+					    			<div class="name">区块收入：</div>
+					    			<div class="value">
+					    				<p>10151000ETH</p>
+					    			</div>
+					    		</div>
+					    		<div class="text-item clearfix">
+					    			<div class="name">分享收益：</div>
+					    			<div class="value">
+					    				<p>15ETH</p>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="record">
+					    		<ul>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value"><h4>0.021222ETH</h4></div>
+					    			</li>
+					    		</ul>
+					    		<a href="javascript:;" class="more-btn">查看更多</a>
+					    	</div>
+					    </div>
+					    <div class="swiper-slide">
+					    	<div class="record">
+					    		<ul>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    			<li>
+					    				<div class="date">
+					    					<h4>2018-10-23</h4>
+					    					<p>15:30:31</p>
+					    				</div>
+					    				<div class="value">
+					    					<h4>0.021222ETH</h4>
+											<p>一代推荐</p>
+					    				</div>
+					    			</li>
+					    		</ul>
+					    		<a href="javascript:;" class="more-btn">查看更多</a>
+					    	</div>
+					    </div>
+				 	 </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="filter-bg"></div>
+	<div class="popup popup1">
+		<a href="javascript:;" class="popup-close"></a>
+		<div class="popup-top">帮助</div>
+		<div class="popup-con">
+			<p>大奖池中最高奖金为40%是指：游戏倒数第1名买入的用户将获得奖池总额度的40%的奖励。</p>
+			<h5>注：所有等级的奖励都将拿出20%分享给推荐者，具体细则请参考《规则说明》。</h5>
+		</div>
+	</div>
+	<div class="popup popup2">
+		<a href="javascript:;" class="popup-close"></a>
+		<div class="popup-top">帮助</div>
+		<div class="popup-con">
+			<p>KEY：KEY代表着时间钥匙，每投入一枚钥匙，时间自然延长一分钟，累计时间不超过24个小时。每消耗一个KEY，KEY的价格会上涨万分之一。</p>
+		</div>
+	</div>
+	<div class="popup popup3">
+		<a href="javascript:;" class="popup-close"></a>
+		<div class="popup-top">充值ROFK</div>
+		<div class="popup-con">
+			<div class="erweima">
+				<img src="images/erweima.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="popup popup4">
+		<a href="javascript:;" class="popup-close"></a>
+		<div class="popup-top">用以太币购买KEY</div>
+		<div class="popup-con">
+			<h5>请使用您的imToken钱包扫<br>瞄下方的二维码支付</h5>
+			<h2>5 ETF</h2>
+			<div class="erweima">
+				<img src="images/erweima.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+
+	//战队赛|大奖池|定时开奖切换
+	var mySwiper1 = new Swiper('#mySwiper1', {
+		autoplay: false,
+		effect : 'fade',
+  		fadeEffect: {
+    		crossFade: true,
+  		},
+  		autoHeight: true
+	});
+
+	$('.index-item1 .item-menu a').on('click',function(){
+		var Index = $(this).index();
+		$(this).addClass('on').siblings().removeClass('on');
+		mySwiper1.slideTo(Index, 400, false);
+	});
+
+
+	//金库|购买记录|分红记录切换
+	var mySwiper2 = new Swiper('#mySwiper2', {
+		autoplay: false,
+		effect : 'fade',
+  		fadeEffect: {
+    		crossFade: true,
+  		},
+  		autoHeight: true
+	});
+
+	$('.index-item3 .item-menu a').on('click',function(){
+		var Index = $(this).index();
+		$(this).addClass('on').siblings().removeClass('on');
+		mySwiper2.slideTo(Index, 400, false);
+	});
+
+
+	//大奖池倒计时
+	$('.countdown').downCount({
+        date: '12/27/2018 00:00:00',
+        offset: +10
+    }, function () {
+        console.log('倒计时结束!');
+    });
+
+
+	//加减key数值
+    $('.reduce-btn,.add-btn').on('click',function(){
+    	var key = parseInt($('#keyNum').val());
+    	if($(this).is('.reduce-btn')&&key>0){
+    		key--
+    	}else if($(this).is('.add-btn')){
+    		key++
+    	}
+    	$('#keyNum').val(key);
+    	$('.quantity').html((key*0.04).toFixed(8));
+    });
+
+
+    //弹窗
+    $('.popup-btn1').on('click',function(){
+    	$('.filter-bg').fadeIn();
+    	$('.popup1').fadeIn();
+    });
+
+    $('.popup-btn2').on('click',function(){
+    	$('.filter-bg').fadeIn();
+    	$('.popup2').fadeIn();
+    })
+
+	$('.rofk-btn').on('click',function(){
+    	$('.filter-bg').fadeIn();
+    	$('.popup3').fadeIn();
+    })
+
+    $('.pay-btn').on('click',function(){
+    	$('.filter-bg').fadeIn();
+    	$('.popup4').fadeIn();
+    })
+
+    $('.popup-close').on('click',function(){
+    	$('.filter-bg').fadeOut();
+    	$(this).parents('.popup').fadeOut();
+    })
+
+    var timer;
+    var $h = $('.limited').height();
+    var $ceilH = $('.limited').find('li').eq(0).height();
+    var $count = $('.limited').find('li').length;
+    var $dis = $ceilH*$count - $h; 
+    function timerPlay(){
+    	timer = setInterval(function(){
+	    	var top = $('.limited').scrollTop();
+	    	if(top>=$dis){
+	    		$('.limited').scrollTop(0)
+	    	}else{
+	    		var newTop = top+1;
+	    		$('.limited').scrollTop(newTop)
+	    	}
+	    	
+	    },50);
+    }
+	function timerStop(){
+		clearInterval(timer);
+	}
+	timerPlay();
+	$('.limited').mouseenter(function(){timerStop()});
+	$('.limited').mouseleave(function(){timerPlay()});
+
+
+	//模拟加载
+	$('.record').each(function(index, el) {
+		var ul = $(el).find('ul');
+		var btn = $(el).find('.more-btn');
+		var html = ul.html();
+
+		btn.click(function(){
+			ul.append(html);
+			var h = $(el).outerHeight();
+			$('#mySwiper2').find('.swiper-wrapper').height(h);
+			 
+		});
+	});
+});
+</script>

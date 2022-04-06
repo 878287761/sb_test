@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>公告</title>
+<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+<script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/flexible.js}"></script>
+<script type="text/javascript" th:src="@{/js/common.js}"></script>
+</head>
+<body>
+<div class="bg"></div>
+<div class="page">
+	<div id="hd">
+		<div class="wp clearfix">
+			<a href="index.html" class="hd-logo fl">
+				<img th:src="@{/images/logo.png}">
+			</a>
+			<a href="javascript:;" class="nav-btn"></a>
+			<div class="hd-nav fr">
+				<div class="nav-top clearfix">
+					<a href="index.html" class="nav-logo fl">
+						<img th:src="@{/images/logo.png}">
+					</a>
+					<a href="javascript:;" class="nav-close fr"></a>
+				</div>
+				<a href="notice.html" class="nav-item">公告</a>
+				<a href="rule.html" class="nav-item">规则说明</a>
+				<div class="nav-item user">
+					<span>账户</span>
+					<div class="dropdown">
+						<p>0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826</p>
+					</div>
+				</div>
+				<div class="nav-item balance">
+					<span>Been余额</span>
+					<div class="dropdown">
+						<p>240</p>
+					</div>
+				</div>
+				<a href="javascript:;" class="nav-item signout">退出</a>
+				<div class="hd-login clearfix">
+					<a href="login.html">登录</a>
+					<a th:href="@{register.html}">注册</a>
+				</div>
+				<div class="nav-item recommend">
+					<h4>推荐用户</h4>
+					<div class="dropdown">
+						<img th:src="@{/images/erweima.jpg}">
+						<!--<p>https://www.foomoo5d.com/index.php/Home/Login/main.html</p>-->
+						<a href="javascript:;" class="copy-btn">复制网址</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rule-page wp">
+		<h3>公告</h3><br>
+		<p>亲爱的全球王者归来玩家</p>
+		<p>1：电脑用户登陆metamask钱包，手机用户用trustwallet钱包打开，才能显示区块链开奖时间和奖金池以及key的数量，潜力玩家等，因为所有数据都是从区块链上获取的。</p>
+		<p>2：key的数量已经全部映射完毕，个别玩家没注意最小投资额的没有获取到key，投资不能低于0.4个ETH。进场ETH的35%根据key的数量加权分配。</p>
+		<p>3：区块收入(即静态收入）在2018年10月28日24点之后可以申请提现,0.5个ETH起提。</p>
+		<p>4：动态静态提现在平台点击金库，全部由智能合约自动到账，超过72小时在智能合约燃烧的，平台方将用自己的6%补发.</p>
+		<p>祝福全球玩家 </p>
+		<p>万事如意！财源滚滚!</p>
+		<p>王者归来团队</p>
+		<p>2018.10.25</p>
+	</div>
+</div>
+</body>
+</html>
+
